@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       title: '날씨검색_코디_추천', //앱이름
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.light,
+        brightness: Brightness.dark,
         textTheme: TextTheme(
           headline1: textStyleWithShadow,
           headline2: textStyleWithShadow,

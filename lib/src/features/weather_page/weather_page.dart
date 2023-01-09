@@ -71,7 +71,7 @@ class WeatherPage extends StatelessWidget {
 
               ElevatedButton(
                   onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => style_info_button(txt: "test",)),);},
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => style_info_button(txt: "데이터 받아와서 처리",)),);},
                   child: Text('추천 정보')), // 2. 추천 정보 페이지 넘기기
 
               Spacer(),
