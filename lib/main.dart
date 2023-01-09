@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       )
     ]);
     return MaterialApp(
-      title: '날씨검색_코디_추천',
+      title: '날씨검색_코디_추천', //앱이름
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.light,
