@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       )
     ]);
     return MaterialApp(
-      title: 'Flutter Weather App',
+      title: '날씨검색_코디_추천',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.light,
@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
 
           subtitle1: const TextStyle(color: Colors.white),
           bodyText2: const TextStyle(color: Colors.white), //최고,최저
-          bodyText1: const TextStyle(color: Colors.black), //요일
+          bodyText1: const TextStyle(color: Colors.black), //검색
           caption: const TextStyle(color: Colors.white70, fontSize: 13), //요일
         ),
       ),

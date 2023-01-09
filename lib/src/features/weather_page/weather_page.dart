@@ -3,6 +3,7 @@ import 'package:open_weather_example_flutter/src/constants/app_colors.dart';
 import 'package:open_weather_example_flutter/src/features/weather_page/city_search_box.dart';
 import 'package:open_weather_example_flutter/src/features/weather_page/current_weather.dart';
 import 'package:open_weather_example_flutter/src/features/weather_page/hourly_weather.dart';
+import 'package:open_weather_example_flutter/src/features/weather_page/style_info_button.dart';
 
 class WeatherPage extends StatelessWidget {
   const WeatherPage({Key? key, required this.city}) : super(key: key);
@@ -32,7 +33,9 @@ class WeatherPage extends StatelessWidget {
               Spacer(),
               CurrentWeather(),
               Spacer(),
-              ElevatedButton(onPressed: (){}, child: Text('추천')), // 1. 정보를 얻을 수 있는 버튼
+              ElevatedButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => style_info_button()),);},
+                  child: Text('추천')), // 1. 정보를 얻을 수 있는 버튼
               Spacer(),
               HourlyWeather(),
               Spacer(),
