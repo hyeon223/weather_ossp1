@@ -4,9 +4,9 @@ import 'package:open_weather_example_flutter/src/entities/weather/weather.dart';
 /// Derived model class used in the UI
 class WeatherData {
   WeatherData({
-    required this.temp,
-    required this.minTemp,
-    required this.maxTemp,
+    required this.temp, //온도
+    required this.minTemp, //최저기온
+    required this.maxTemp, //최저기온
     required this.description,
     required this.date,
     required this.icon,

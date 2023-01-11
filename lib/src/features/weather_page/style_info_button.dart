@@ -1,6 +1,8 @@
 import 'dart:html';
 
 import 'package:flutter/material.dart';
+import 'package:open_weather_example_flutter/src/entities/weather/weather_data.dart'; //날씨정보에서 온도 정보를 받아올 예정
+//추가한 페이지
 
 class style_info_button extends StatefulWidget {
   var txt = "";
