@@ -48,3 +48,42 @@ class CurrentWeatherContents extends ConsumerWidget {
     );
   }
 }
+
+
+
+// 온도 정보를 받아오는 클래스, (구현할 부분)
+class Current_temp extends ConsumerWidget {
+  const Current_temp({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final weatherDataValue = ref.watch(currentWeatherControllerProvider);
+    final city = ref.watch(cityProvider);
+    return
+      weatherDataValue.when(
+        data: (weatherData) => c_t(data: weatherData),
+        loading: () => const Center(child: CircularProgressIndicator()),
+        error: (e, __) => Text(e.toString()),
+      );
+  }
+}
+
+class c_t extends ConsumerWidget {
+  const c_t({Key? key, required this.data}) : super(key: key);
+
+  final WeatherData data;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final textTheme = Theme.of(context).textTheme;
+
+    final temp = data.temp.celsius.toInt().toString();
+
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text('온도정보를 받아옴'),
+        Text(temp, style: textTheme.headline2), // 온도 정보
+      ],
+    );
+  }
+}
