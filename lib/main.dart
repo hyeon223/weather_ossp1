@@ -19,6 +19,9 @@ class MyApp extends StatelessWidget {
         offset: const Offset(0, 0.5),
       )
     ]);
+
+    final text_temp = TextStyle(color: Colors.white, fontSize: 18); //온도 textstyle
+
     return MaterialApp(
       title: '날씨검색_코디_추천', //앱이름
       debugShowCheckedModeBanner: false,
@@ -30,6 +33,8 @@ class MyApp extends StatelessWidget {
           headline3: textStyleWithShadow,
           headline4: textStyleWithShadow,
           headline5: textStyleWithShadow,
+
+          headline6: text_temp, //온도 설정폰트
 
           subtitle1: const TextStyle(color: Colors.white),
           bodyText2: const TextStyle(color: Colors.white), //최고,최저

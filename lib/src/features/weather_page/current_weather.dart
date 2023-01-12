@@ -26,8 +26,8 @@ class CurrentWeather extends ConsumerWidget {
 }
 
 class CurrentWeatherContents extends ConsumerWidget {
-  const CurrentWeatherContents({Key? key, required this.data})
-      : super(key: key);
+  const CurrentWeatherContents({Key? key, required this.data}) : super(key: key);
+
   final WeatherData data;
 
   @override
@@ -50,25 +50,34 @@ class CurrentWeatherContents extends ConsumerWidget {
 }
 
 
+//
 
-// 온도 정보를 받아오는 클래스, (구현할 부분)
-class Current_temp extends ConsumerWidget {
-  const Current_temp({Key? key}) : super(key: key);
+class c_t extends ConsumerWidget {
+  const c_t({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final weatherDataValue = ref.watch(currentWeatherControllerProvider);
     final city = ref.watch(cityProvider);
-    return
-      weatherDataValue.when(
-        data: (weatherData) => c_t(data: weatherData),
-        loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, __) => Text(e.toString()),
-      );
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+
+      children: [
+        Text('현재 '),
+        Text(city, style: Theme.of(context).textTheme.headline6),
+        Text('의 기온은 '),
+        weatherDataValue.when(
+          data: (weatherData) => c_t2(data: weatherData),
+          loading: () => const Center(child: CircularProgressIndicator()),
+          error: (e, __) => Text(e.toString()),
+        ),
+        Text('° 입니다.')
+      ],
+    );
   }
 }
 
-class c_t extends ConsumerWidget {
-  const c_t({Key? key, required this.data}) : super(key: key);
+class c_t2 extends ConsumerWidget{
+  const c_t2({Key? key, required this.data}) : super(key: key);
 
   final WeatherData data;
 
@@ -81,8 +90,7 @@ class c_t extends ConsumerWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text('온도정보를 받아옴'),
-        Text(temp, style: textTheme.headline2), // 온도 정보
+        Text(temp, style: textTheme.headline6), // 온도 정보
       ],
     );
   }
