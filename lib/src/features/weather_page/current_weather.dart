@@ -70,7 +70,7 @@ class c_t extends ConsumerWidget {
           loading: () => const Center(child: CircularProgressIndicator()),
           error: (e, __) => Text(e.toString()),
         ),
-        Text('° 입니다.')
+        Text('° 입니다.'),
       ],
     );
   }

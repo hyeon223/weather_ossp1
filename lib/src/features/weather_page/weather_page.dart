@@ -23,7 +23,25 @@ class WeatherPage extends StatelessWidget {
 
                 child: ListBody(
                   children: [
-                    c_t()
+
+                    ListTile(title: Text('28°C 이상'),onTap: (){
+
+                      showDialog
+                        (context: context,
+                          builder: (BuildContext){
+                            return AlertDialog( title: Text('28'),content: SingleChildScrollView(child: ListBody(children: [Text('28')],),),  ); });
+                      /*AlertDialog(title: Text('28'),
+                          content: SingleChildScrollView(child: ListBody(children: [Text('28')],)) );*/ }
+                    ),
+
+                    ListTile(title: Text('28°C 이상'),onTap: (){print('민소매, 반팔, 반바지, 짧은치마, 린넨 옷');}),
+                    ListTile(title: Text('27°C ~ 23°C'),onTap: (){print('반팔, 얇은 셔츠, 반바지, 면바지');}),
+                    ListTile(title: Text('22°C ~ 20°C'),onTap: (){print('블라우스, 긴팔티, 면바지, 슬랙스');}),
+                    ListTile(title: Text('19°C ~ 17°C'),onTap: (){print('얇은 가디건, 얇은 니트, 맨투맨, 후드, 긴바지');}),
+                    ListTile(title: Text('16°C ~ 12°C'),onTap: (){print('자켓, 가디건, 청자켓, 니트, 스타킹, 청바지');}),
+                    ListTile(title: Text('11°C ~ 9°C'),onTap: (){print('트렌치코트, 야상, 점퍼, 스타킹, 기모바지');}),
+                    ListTile(title: Text('8°C ~ 5°C'),onTap: (){print('울코트, 히트텍, 가죽 옷, 기모');}),
+                    ListTile(title: Text('4°C 이하'),onTap: (){print('패딩, 두꺼운 코트, 누빔옷, 기모, 목도리');})
                   ],
                 ),
               ),
