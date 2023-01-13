@@ -16,6 +16,7 @@ class _style_info_buttonState extends State<style_info_button> {
     return Scaffold(
         appBar: AppBar(
           title: Text('기온에 맞는 옷 추천'),
+          backgroundColor: Color(0xFF87CEEB),
           centerTitle: true,
           leading: IconButton(onPressed: (){Navigator.of(context).pop();},
               icon: Icon(Icons.arrow_back)
