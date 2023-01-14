@@ -35,6 +35,8 @@ class WeatherPage extends StatelessWidget {
                                   content: SingleChildScrollView(child:
                                   ListBody(children: [
                                     Text('민소매, 반팔, 반바지, 원피스를 추천합니다.'),
+                                    Text(''),
+                                    Text(''),
                                     TextButton(onPressed: (){Navigator.of(context).pop();}, child: Text('ok'))
                                   ]
                                     ,),),  ); });
@@ -51,7 +53,13 @@ class WeatherPage extends StatelessWidget {
                               builder: (BuildContext){//새로운 dialog, 기온, 기온별 옷차림
                                 return AlertDialog( title: Text('27°C ~ 23°C 에서는'),
                                   content: SingleChildScrollView(child:
-                                  ListBody(children: [Text('반팔, 얇은 셔츠, 반바지, 면바지를 추천합니다.')],),),  ); });
+                                  ListBody(children: [
+                                    Text('반팔, 얇은 셔츠, 반바지, 면바지를 추천합니다.'),
+                                    Text(''),
+                                    Text(''),
+                                    TextButton(onPressed: (){Navigator.of(context).pop();}, child: Text('ok'))
+                                  ]
+                                    ,),),  ); });
                         }
                     ),
 
@@ -65,7 +73,13 @@ class WeatherPage extends StatelessWidget {
                               builder: (BuildContext){//새로운 dialog, 기온, 기온별 옷차림
                                 return AlertDialog( title: Text('22°C ~ 20°C 에서는'),
                                   content: SingleChildScrollView(child:
-                                  ListBody(children: [Text('블라우스, 긴팔티, 면바지, 슬랙스를 추천합니다.')],),),  ); });
+                                  ListBody(children: [
+                                    Text('블라우스, 긴팔티, 면바지, 슬랙스를 추천합니다.'),
+                                    Text(''),
+                                    Text(''),
+                                    TextButton(onPressed: (){Navigator.of(context).pop();}, child: Text('ok'))
+                                  ]
+                                    ,),),  ); });
                         }
                     ),
 
@@ -79,7 +93,13 @@ class WeatherPage extends StatelessWidget {
                             builder: (BuildContext){//새로운 dialog, 기온, 기온별 옷차림
                               return AlertDialog( title: Text('19°C ~ 17°C 에서는'),
                                 content: SingleChildScrollView(child:
-                                ListBody(children: [Text('얇은 가디건, 얇은 니트, 맨투맨, 후드, 긴바지를 추천합니다.')],),),  ); },);
+                                ListBody(children: [
+                                  Text('얇은 가디건, 얇은 니트, 맨투맨, 후드, 긴바지를 추천합니다.'),
+                                  Text(''),
+                                  Text(''),
+                                  TextButton(onPressed: (){Navigator.of(context).pop();}, child: Text('ok'))
+                                ]
+                                  ,),),  ); },);
                         }
                     ),
 
@@ -93,7 +113,13 @@ class WeatherPage extends StatelessWidget {
                               builder: (BuildContext){//새로운 dialog, 기온, 기온별 옷차림
                                 return AlertDialog( title: Text('16°C ~ 12°C 에서는'),
                                   content: SingleChildScrollView(child:
-                                  ListBody(children: [Text('자켓, 가디건, 청자켓, 니트, 청바지를 추천합니다.')],),),  ); });
+                                  ListBody(children: [
+                                    Text('자켓, 가디건, 청자켓, 니트, 청바지를 추천합니다.'),
+                                    Text(''),
+                                    Text(''),
+                                    TextButton(onPressed: (){Navigator.of(context).pop();}, child: Text('ok'))
+                                  ]
+                                    ,),),  ); });
                         }
                     ),
 
@@ -107,7 +133,12 @@ class WeatherPage extends StatelessWidget {
                               builder: (BuildContext){//새로운 dialog, 기온, 기온별 옷차림
                                 return AlertDialog( title: Text('11°C ~ 9°C 에서는'),
                                   content: SingleChildScrollView(child:
-                                  ListBody(children: [Text('트렌치코트, 야상, 점퍼, 기모바지를 추천합니다.')],),),  ); });
+                                  ListBody(children: [
+                                    Text('트렌치코트, 야상, 점퍼, 기모바지를 추천합니다.'),
+                                    Text(''),
+                                    Text(''),
+                                    TextButton(onPressed: (){Navigator.of(context).pop();}, child: Text('ok'))
+                                  ],),),  ); });
                         }
                     ),
 
@@ -121,7 +152,12 @@ class WeatherPage extends StatelessWidget {
                               builder: (BuildContext){//새로운 dialog, 기온, 기온별 옷차림
                                 return AlertDialog( title: Text('8°C ~ 5°C 에서는'),
                                   content: SingleChildScrollView(child:
-                                  ListBody(children: [Text('울코트, 히트텍, 가죽 자켓, 니트, 레깅스, 기모를 추천합니다.')],),),  ); });
+                                  ListBody(children: [
+                                    Text('울코트, 히트텍, 가죽 자켓, 니트, 레깅스, 기모를 추천합니다.'),
+                                    Text(''),
+                                    Text(''),
+                                    TextButton(onPressed: (){Navigator.of(context).pop();}, child: Text('ok'))
+                                  ],),),  ); });
                         }
                     ),
 
@@ -135,7 +171,13 @@ class WeatherPage extends StatelessWidget {
                               builder: (BuildContext){//새로운 dialog, 기온, 기온별 옷차림
                                 return AlertDialog( title: Text('4°C 이하 에서는'),
                                   content: SingleChildScrollView(child:
-                                  ListBody(children: [Text('패딩, 두꺼운 코트, 누빔옷, 기모제품, 목도리를 추천합니다.')],),),  ); });
+                                  ListBody(children: [
+                                    Text('패딩, 두꺼운 코트, 누빔옷, 기모제품, 목도리를 추천합니다.'),
+                                    Text(''),
+                                    Text(''),
+                                    TextButton(onPressed: (){Navigator.of(context).pop();}, child: Text('ok'))
+                                  ]
+                                    ,),),  ); });
                         }
                     ),
 
