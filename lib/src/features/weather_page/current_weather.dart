@@ -62,15 +62,15 @@ class c_t extends ConsumerWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
 
       children: [
-        Text('현재 '),
+        Text('현재 ',style: Theme.of(context).textTheme.headline6),
         Text(city, style: Theme.of(context).textTheme.headline6),
-        Text('의 기온은 '),
+        Text('의 기온은 ',style: Theme.of(context).textTheme.headline6),
         weatherDataValue.when(
           data: (weatherData) => c_t2(data: weatherData),
           loading: () => const Center(child: CircularProgressIndicator()),
           error: (e, __) => Text(e.toString()),
         ),
-        Text('° 입니다.'),
+        Text('°C 입니다.',style: Theme.of(context).textTheme.headline6),
       ],
     );
   }

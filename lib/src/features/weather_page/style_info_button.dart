@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:open_weather_example_flutter/src/features/weather_page/current_weather.dart';
 
 class style_info_button extends StatefulWidget {
-  var txt = '';
-  style_info_button({Key? key, required this.txt}) : super(key: key);
+  style_info_button({Key? key}) : super(key: key);
 
   @override
   State<style_info_button> createState() => _style_info_buttonState();
@@ -15,7 +14,7 @@ class _style_info_buttonState extends State<style_info_button> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('기온에 맞는 옷 추천'),
+          title: Text('기온별 상세 정보'),
           backgroundColor: Color(0xFF87CEEB),
           centerTitle: true,
           leading: IconButton(onPressed: (){Navigator.of(context).pop();},
@@ -25,7 +24,7 @@ class _style_info_buttonState extends State<style_info_button> {
         body: Container(
           child: Center(
             child:
-            Text(widget.txt),
+            Text('정보 페이지 '),
           ),
         )
     );
