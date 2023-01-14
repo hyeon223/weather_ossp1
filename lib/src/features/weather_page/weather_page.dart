@@ -33,7 +33,11 @@ class WeatherPage extends StatelessWidget {
                               builder: (BuildContext){//새로운 dialog, 기온, 기온별 옷차림
                                 return AlertDialog( title: Text('28°C 이상에서는'),
                                   content: SingleChildScrollView(child:
-                                  ListBody(children: [Text('민소매, 반팔, 반바지, 원피스를 추천합니다.')],),),  ); });
+                                  ListBody(children: [
+                                    Text('민소매, 반팔, 반바지, 원피스를 추천합니다.'),
+                                    TextButton(onPressed: (){Navigator.of(context).pop();}, child: Text('ok'))
+                                  ]
+                                    ,),),  ); });
                         }
                     ),
 
