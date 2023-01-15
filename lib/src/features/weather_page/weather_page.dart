@@ -134,7 +134,7 @@ class WeatherPage extends StatelessWidget {
                                 return AlertDialog( title: Text('11°C ~ 9°C 에서는'),
                                   content: SingleChildScrollView(child:
                                   ListBody(children: [
-                                    Text('트렌치코트, 야상, 점퍼, 기모바지를 추천합니다.'),
+                                    Text('트렌치코트, 가죽 자켓, 점퍼, 기모바지를 추천합니다.'),
                                     Text(''),
                                     Text(''),
                                     TextButton(onPressed: (){Navigator.of(context).pop();}, child: Text('ok'))
@@ -153,7 +153,7 @@ class WeatherPage extends StatelessWidget {
                                 return AlertDialog( title: Text('8°C ~ 5°C 에서는'),
                                   content: SingleChildScrollView(child:
                                   ListBody(children: [
-                                    Text('울코트, 히트텍, 가죽 자켓, 니트, 레깅스, 기모를 추천합니다.'),
+                                    Text('울코트, 히트텍, 니트, 레깅스를 추천합니다.'),
                                     Text(''),
                                     Text(''),
                                     TextButton(onPressed: (){Navigator.of(context).pop();}, child: Text('ok'))
@@ -172,7 +172,7 @@ class WeatherPage extends StatelessWidget {
                                 return AlertDialog( title: Text('4°C 이하 에서는'),
                                   content: SingleChildScrollView(child:
                                   ListBody(children: [
-                                    Text('패딩, 두꺼운 코트, 누빔옷, 기모제품, 목도리를 추천합니다.'),
+                                    Text('패딩, 두꺼운 코트, 누빔옷, 목도리를 추천합니다.'),
                                     Text(''),
                                     Text(''),
                                     TextButton(onPressed: (){Navigator.of(context).pop();}, child: Text('ok'))

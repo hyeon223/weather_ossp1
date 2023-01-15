@@ -21,21 +21,28 @@ class _style_info_buttonState extends State<style_info_button> {
               icon: Icon(Icons.arrow_back)
           ),
         ),
-        body: Container(
-          child: Column(
-            children: [
+        body: ListView(
+          children: <Widget>[
+            Container(
+              child: Column(
+                children: [
+                  Text('28 이상'),
+                  Row(children: [
+                    Image.asset('assets/반팔.jpg',height: 150, width: 150),
+                    Image.asset('assets/반팔.jpg',height: 100, width: 100)
+                  ],),
 
-              Text('옷차림 테스트'),
+                  Text('27~24 이상'),
+                  Row(children: [
+                    Image.asset('assets/반팔.jpg',height: 100, width: 100),
+                    Image.asset('assets/반팔.jpg',height: 100, width: 100)
+                  ],),
 
-              Row(children: [
-                Image.asset('assets/반팔.jpg'),
-              ],),
+                  //Image.asset('assets/반팔.jpg'),//이미지 추가중
 
-              Image.asset('assets/반팔.jpg'),//이미지 추가중
-
-            ],
-          ),
-        )
+                ],),
+            )
+          ],)
     );
   }
 }
