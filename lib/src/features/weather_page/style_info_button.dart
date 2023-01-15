@@ -22,9 +22,18 @@ class _style_info_buttonState extends State<style_info_button> {
           ),
         ),
         body: Container(
-          child: Center(
-            child:
-            Text('정보 페이지 '),
+          child: Column(
+            children: [
+
+              Text('옷차림 테스트'),
+
+              Row(children: [
+                Image.asset('assets/반팔.jpg'),
+              ],),
+
+              Image.asset('assets/반팔.jpg'),//이미지 추가중
+
+            ],
           ),
         )
     );
