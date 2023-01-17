@@ -14,7 +14,7 @@ class _style_info_buttonState extends State<style_info_button> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('기온별 상세 정보'),
+          title: Text('기온별 상세 추천 정보'),
           backgroundColor: Color(0xFF87CEEB),
           centerTitle: true,
           leading: IconButton(onPressed: (){Navigator.of(context).pop();},
@@ -26,7 +26,10 @@ class _style_info_buttonState extends State<style_info_button> {
             Container(
               child: Column(
                 children: [
-                  Text('28°C 이상',style: TextStyle(fontSize: 35, color:Colors.white)),//민소매, 반팔, 반바지, 원피스
+                  CurrentWeather(),
+                  Divider(thickness: 1, color: Colors.lightBlueAccent,),
+
+                  Text('28°C 이상',style: TextStyle(fontSize: 35, color:Colors.white)), //민소매, 반팔, 반바지, 원피스
                   Row( mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Column(children: [Image.asset('assets/민소매.jpg',height: 150, width: 150),Text('민소매'),],),

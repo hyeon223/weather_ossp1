@@ -231,7 +231,7 @@ class WeatherPage extends StatelessWidget {
                   onPressed: (){
                     Navigator.push
                       (context, MaterialPageRoute(builder: (context) => style_info_button()),);},
-                  child: Text('기온별 상세 정보')), // 2. 추천 정보 이미지 포함 페이지 넘기기
+                  child: Text('기온별 상세 추천 정보')), // 2. 추천 정보 이미지 포함 페이지 넘기기
               Spacer(),
               HourlyWeather(), // 5일간 기상예보
               Spacer(),
